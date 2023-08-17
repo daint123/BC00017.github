@@ -36,19 +36,11 @@
                             <p>Unpaid</p>
                         {% endif %}
 
-
-
-                        {# {% if inv.isStatus() == false %}
-                        <p>Paid</p>
-                        {% elseif inv.isStatus() == true %}
-                            <p>Unpaid</p>
-                        {% endif %}  #}
                         
                     </td>
                         
                     <td>
                         <a href="{{path('app_ds_Invoicedetail',{'id':inv.getId()})}}" class="btn btn-warning"> Detail</a>
-                        {# <a href="javascript:deleteinv('{{path('app_delete_invoice',{'id':inv.getId()})}}')" class="btn btn-danger"> Delete</a>  #}
                     </td>
                 </tr>
              {% endfor %}
